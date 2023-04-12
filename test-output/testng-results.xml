@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-12T09:03:08Z" name="Suite" finished-at="2023-04-12T09:03:18Z" duration-ms="10061">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.swa.APITestingFramework.cuke.runner.RunCuke@12359a82]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-04-12T09:03:08Z" name="RunCuke" finished-at="2023-04-12T09:03:18Z" duration-ms="10061">
+      <class name="com.swa.APITestingFramework.cuke.runner.RunCuke">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.swa.APITestingFramework.cuke.runner.RunCuke@12359a82]" started-at="2023-04-12T09:03:08Z" name="setUpClass" finished-at="2023-04-12T09:03:08Z" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.swa.APITestingFramework.cuke.runner.RunCuke@12359a82]" started-at="2023-04-12T09:03:08Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:03:15Z" duration-ms="7073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Create Order feature with valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Create Order feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.swa.APITestingFramework.cuke.runner.RunCuke@12359a82]" started-at="2023-04-12T09:03:15Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:03:18Z" duration-ms="2410" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Get Order feature with valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Get Order feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [300] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [300] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.swa.APITestingFramework.cuke.steps.PayPalSteps.i_verify_the_status_code_as(PayPalSteps.java:44)
+at ✽.I verify the status code as "300"(file:src/test/resources/features/getorder.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.swa.APITestingFramework.cuke.runner.RunCuke@12359a82]" started-at="2023-04-12T09:03:18Z" name="tearDownClass" finished-at="2023-04-12T09:03:18Z" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.swa.APITestingFramework.cuke.runner.RunCuke -->
+    </test> <!-- RunCuke -->
+  </suite> <!-- Suite -->
+</testng-results>
